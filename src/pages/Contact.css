@@ -26,6 +26,27 @@
   margin-bottom: 16px;
 }
 
+.booking-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.booking-link:hover,
+.booking-link:focus-visible {
+  color: var(--color-accent-dark, var(--color-accent));
+}
+
+.booking-link-pending {
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-bottom: 0;
+}
+
 @media (max-width: 900px) {
   .contact-grid {
     grid-template-columns: 1fr;

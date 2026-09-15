@@ -4,7 +4,7 @@ export const siteConfig = {
   domain: "atlandoaks.com",
   tagline: "AI Strategy, Product, and Automation Consulting",
   // Set this to the Google Calendar (or other scheduling) booking link when available.
-  bookingUrl: "",
+  bookingUrl: "https://calendar.app.google/xx5EeCdsNfUaWkY98",
   // Set this to the company contact email when available.
   email: "",
 }

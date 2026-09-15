@@ -1,7 +1,6 @@
 import { usePageMeta } from "../hooks/usePageMeta"
 import { Section, SectionHeader } from "../components/Section"
 import { ContactForm } from "../components/ContactForm"
-import { BookConsultationButton } from "../components/BookConsultationButton"
 import { siteConfig } from "../config/site"
 import "./Contact.css"
 
@@ -34,7 +33,20 @@ export function Contact() {
             <div className="contact-panel">
               <h3>Book a Consultation</h3>
               <p>Prefer to talk directly? Schedule an introductory consultation.</p>
-              <BookConsultationButton />
+              {siteConfig.bookingUrl ? (
+                <a
+                  href={siteConfig.bookingUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="booking-link"
+                >
+                  Book time with me here
+                </a>
+              ) : (
+                <p className="booking-link-pending">
+                  Booking link coming soon — use the form to reach out in the meantime.
+                </p>
+              )}
             </div>
 
             <div className="contact-panel">
