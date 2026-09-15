@@ -1,0 +1,31 @@
+.section {
+  padding: 72px 0;
+}
+
+.section-alt {
+  background-color: var(--color-bg-alt);
+}
+
+.section-header {
+  max-width: 640px;
+  margin: 0 0 40px 0;
+}
+
+.section-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin: 0 0 12px 0;
+}
+
+.section-description {
+  font-size: 1.0625rem;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 48px 0;
+  }
+}

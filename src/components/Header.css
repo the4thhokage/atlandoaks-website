@@ -1,0 +1,120 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.site-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 76px;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+}
+
+.primary-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.primary-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 28px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.nav-link:hover {
+  color: var(--color-text);
+}
+
+.nav-link-active {
+  color: var(--color-text);
+  border-bottom-color: var(--color-accent);
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.menu-toggle-bar {
+  width: 18px;
+  height: 2px;
+  background-color: var(--color-text);
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .primary-nav {
+    position: fixed;
+    inset: 76px 0 0 0;
+    background-color: var(--color-bg);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 24px;
+    transform: translateX(100%);
+    transition: transform var(--transition-fast);
+    overflow-y: auto;
+  }
+
+  .primary-nav-open {
+    transform: translateX(0);
+  }
+
+  .primary-nav ul {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 14px 4px;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .nav-link-active {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .primary-nav-cta {
+    margin-top: 20px;
+  }
+
+  .primary-nav-cta .btn {
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
