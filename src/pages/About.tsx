@@ -1,5 +1,7 @@
 import { usePageMeta } from "../hooks/usePageMeta"
 import { Section, SectionHeader } from "../components/Section"
+import { PhotoCredit } from "../components/PhotoCredit"
+import skylineImage from "../assets/images/skyline.jpg"
 import "./About.css"
 
 const beliefs = [
@@ -32,6 +34,26 @@ export function About() {
         </p>
       </Section>
 
+      <Section className="about-photo-section">
+        <figure className="about-figure">
+          <img
+            src={skylineImage}
+            alt="Daytime skyline of a mid-size city, viewed across a river with several bridges"
+            loading="lazy"
+            width={1800}
+            height={438}
+          />
+          <PhotoCredit
+            photographer="Daniel Lu"
+            photographerUrl="https://commons.wikimedia.org/wiki/User:Dllu"
+            sourceLabel="Wikimedia Commons"
+            sourceUrl="https://commons.wikimedia.org/wiki/File:Pittsburgh_skyline_panorama_daytime.jpg"
+            licenseLabel="CC BY-SA 4.0"
+            licenseUrl="https://creativecommons.org/licenses/by-sa/4.0"
+          />
+        </figure>
+      </Section>
+
       <Section variant="alt">
         <SectionHeader eyebrow="Our Approach" title="We start with the business problem, not the technology" />
         <p className="about-copy">
@@ -52,7 +74,28 @@ export function About() {
       <Section variant="alt">
         <SectionHeader eyebrow="Leadership" title="Founder" />
         <div className="founder-card">
-          <p>[Founder biography to be added]</p>
+          <h3>Eric Robinson</h3>
+          <p className="founder-title">Founder &amp; Principal Consultant</p>
+          <p>
+            Eric brings close to a decade of product management experience across Amazon,
+            LinkedIn, HubSpot, and healthcare technology, with a focus on AI-enabled products,
+            platform modernization, and cross-functional execution.
+          </p>
+          <p>
+            He served as Director of Product Management at Interra Health, where he led product
+            strategy for the company's core platform, and has also served as Principal Product
+            Manager at DoseSpot. Earlier in his career, he led product for an AI-powered sales
+            assistant at LinkedIn, modernized communication infrastructure at HubSpot, and led
+            the modernization of Amazon's global seller appeals process, used by more than five
+            million sellers.
+          </p>
+          <p>
+            Alongside his product work, Eric teaches AI product management through Product
+            School, mentors early-stage founders through Techstars, and serves as an
+            Entrepreneur in Residence with The Idea Village. Atland Oaks reflects that same
+            practical, execution-oriented approach: helping organizations move from AI ideas to
+            implemented, measurable outcomes.
+          </p>
         </div>
       </Section>
     </>

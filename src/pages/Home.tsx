@@ -4,6 +4,8 @@ import { ServiceCard } from "../components/ServiceCard"
 import { CTA } from "../components/CTA"
 import { BookConsultationButton } from "../components/BookConsultationButton"
 import { Button } from "../components/Button"
+import { PhotoCredit } from "../components/PhotoCredit"
+import oakTreeImage from "../assets/images/oak-tree.jpg"
 import "./Home.css"
 
 const services = [
@@ -103,19 +105,39 @@ export function Home() {
   return (
     <>
       <Section className="hero">
-        <div className="hero-content">
-          <h1>AI Strategy, Product, and Automation Consulting</h1>
-          <p className="hero-lead">
-            Atland Oaks helps organizations identify high-value opportunities for artificial
-            intelligence, design practical solutions, and implement technology that improves
-            operations, decision-making, and customer experiences.
-          </p>
-          <div className="hero-actions">
-            <BookConsultationButton />
-            <Button to="/services" variant="secondary">
-              Explore Our Services
-            </Button>
+        <div className="hero-grid">
+          <div className="hero-content">
+            <h1>AI Strategy, Product, and Automation Consulting</h1>
+            <p className="hero-lead">
+              Atland Oaks helps organizations identify high-value opportunities for artificial
+              intelligence, design practical solutions, and implement technology that improves
+              operations, decision-making, and customer experiences.
+            </p>
+            <div className="hero-actions">
+              <BookConsultationButton />
+              <Button to="/services" variant="secondary">
+                Explore Our Services
+              </Button>
+            </div>
           </div>
+          <figure className="hero-figure">
+            <img
+              src={oakTreeImage}
+              alt="A solitary oak tree standing on a grassy hillside, backlit by afternoon sun"
+              loading="eager"
+              fetchPriority="high"
+              width={1400}
+              height={1050}
+            />
+            <PhotoCredit
+              photographer="Daniel Lu"
+              photographerUrl="https://commons.wikimedia.org/wiki/User:Dllu"
+              sourceLabel="Wikimedia Commons"
+              sourceUrl="https://commons.wikimedia.org/wiki/File:Oak_tree_Sunol_Regional_Wilderness_California_2023_dllu.jpg"
+              licenseLabel="CC BY-SA 4.0"
+              licenseUrl="https://creativecommons.org/licenses/by-sa/4.0"
+            />
+          </figure>
         </div>
       </Section>
 
