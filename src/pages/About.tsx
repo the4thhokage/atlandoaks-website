@@ -77,17 +77,18 @@ export function About() {
           <h3>Eric Robinson</h3>
           <p className="founder-title">Founder &amp; Principal Consultant</p>
           <p>
-            Eric brings close to a decade of product management experience across Amazon,
-            LinkedIn, HubSpot, and healthcare technology, with a focus on AI-enabled products,
-            platform modernization, and cross-functional execution.
+            Eric holds an MBA from Duke University and brings close to a decade of product
+            management experience across Amazon, LinkedIn, HubSpot, and healthcare technology,
+            with a focus on business strategy, AI-enabled products, platform modernization, and
+            cross-functional execution.
           </p>
           <p>
             He served as Director of Product Management at Interra Health, where he led product
-            strategy for the company's core platform, and has also served as Principal Product
-            Manager at DoseSpot. Earlier in his career, he led product for an AI-powered sales
-            assistant at LinkedIn, modernized communication infrastructure at HubSpot, and led
-            the modernization of Amazon's global seller appeals process, used by more than five
-            million sellers.
+            strategy for the company's core platform and helped the team maintain near-zero
+            unplanned downtime, and has also served as Principal Product Manager at DoseSpot.
+            Earlier in his career, he led product for an AI-powered sales assistant at LinkedIn,
+            modernized communication infrastructure at HubSpot, and led the modernization of
+            Amazon's global seller appeals process, used by more than five million sellers.
           </p>
           <p>
             Alongside his product work, Eric teaches AI product management through Product

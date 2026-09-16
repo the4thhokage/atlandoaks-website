@@ -12,6 +12,21 @@ interface ServiceDetail {
 
 const serviceDetails: ServiceDetail[] = [
   {
+    title: "Business Strategy & Growth",
+    problem:
+      "AI and technology decisions are only as good as the business strategy underneath them. Many organizations move straight to technology choices without a clear view of how they intend to compete, grow, and allocate resources.",
+    whatWeDo: [
+      "Business strategy development",
+      "Growth planning",
+      "Market and competitive positioning",
+      "Resource and investment prioritization",
+      "Operating model design",
+      "Executive strategy advisory",
+    ],
+    outcomes:
+      "A clear business strategy that technology, AI, and automation investments can be built on top of.",
+  },
+  {
     title: "AI Strategy & Roadmapping",
     problem:
       "Leadership teams often sense AI is important but lack a structured way to evaluate where it applies to their business.",
@@ -76,19 +91,20 @@ const serviceDetails: ServiceDetail[] = [
     outcomes: "Working agents and intelligent systems designed with appropriate oversight and controls.",
   },
   {
-    title: "Technology & Product Advisory",
+    title: "Technology Readiness & Infrastructure Strategy",
     problem:
-      "Organizations need an outside, cross-functional perspective on technology and product decisions.",
+      "AI and automation initiatives often stall not because the idea is wrong, but because the underlying systems, data, and infrastructure aren't ready to support them.",
     whatWeDo: [
-      "Product strategy",
+      "Technology readiness assessment",
+      "Infrastructure and platform strategy",
       "Technical architecture evaluation",
+      "Reliability and scalability planning",
       "Vendor selection",
-      "Platform evaluation",
       "Technology modernization",
-      "Product operating models",
-      "Executive product advisory",
+      "Executive technology advisory",
     ],
-    outcomes: "Clearer technology and product decisions grounded in business priorities.",
+    outcomes:
+      "A clear, credible picture of technology readiness and the infrastructure investments needed to support what you want to build.",
   },
 ]
 
@@ -96,7 +112,7 @@ export function Services() {
   usePageMeta({
     title: "Services | Atland Oaks",
     description:
-      "AI and technology consulting services from Atland Oaks, including strategy, product development, workflow automation, and AI agents.",
+      "Business strategy, AI strategy, product development, workflow automation, technology infrastructure, and AI agent services from Atland Oaks.",
   })
 
   return (

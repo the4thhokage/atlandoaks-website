@@ -10,6 +10,11 @@ import "./Home.css"
 
 const services = [
   {
+    title: "Business Strategy & Growth",
+    description:
+      "Develop business strategy and growth plans grounded in market position, operating model, and resource priorities — the foundation technology investments should build on.",
+  },
+  {
     title: "AI Strategy & Roadmapping",
     description:
       "Help organizations evaluate where AI can create measurable value, prioritize opportunities, and develop an actionable implementation roadmap.",
@@ -23,6 +28,11 @@ const services = [
     title: "Workflow Automation",
     description:
       "Identify repetitive or inefficient processes and design intelligent automation that reduces manual work and improves operational efficiency.",
+  },
+  {
+    title: "Technology Readiness & Infrastructure Strategy",
+    description:
+      "Assess whether existing systems, data, and infrastructure can support what you want to build, and plan the investments needed to get there.",
   },
   {
     title: "AI Agents & Intelligent Systems",
@@ -143,7 +153,7 @@ export function Home() {
 
       <Section variant="alt">
         <SectionHeader eyebrow="What We Do" title="Core consulting areas" />
-        <div className="card-grid">
+        <div className="card-grid card-grid-3">
           {services.map((service) => (
             <ServiceCard key={service.title} title={service.title} description={service.description} />
           ))}
